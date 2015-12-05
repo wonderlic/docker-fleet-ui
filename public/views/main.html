@@ -1,5 +1,5 @@
 <script type="application/javascript">
-  angular.module('fleetuiApp').filter('searchFilter', function($filter) {
+  angular.module('fleetuiApp').filter('search', function($filter) {
     return function(inputArray, searchText, booleanOp) {
       booleanOp = booleanOp || 'AND';
       var searchTerms = (searchText || '').toLowerCase().split(/\s+/);
